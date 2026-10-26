@@ -1,2 +1,2 @@
 # ACEGPT
-ACEGPT is an ai assistant build for helping customers in their daily lives
+ACEGPT is an AI assistant designed to help customers in their daily lives.
