@@ -1,0 +1,46 @@
+{
+  "name": "acegpt",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently \"npm:dev:server\" \"npm:dev:client\"",
+    "dev:client": "vite",
+    "dev:server": "tsx watch server/index.ts",
+    "build": "vite build",
+    "preview": "vite preview --host 0.0.0.0",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@google/generative-ai": "^0.21.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.1",
+    "express": "^5.0.0",
+    "helmet": "^8.0.0",
+    "lucide-react": "^0.469.0",
+    "morgan": "^1.10.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-markdown": "^9.0.0",
+    "remark-gfm": "^4.0.0"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^6.6.0",
+    "@testing-library/react": "^16.0.1",
+    "@types/cors": "^2.8.5",
+    "@types/express": "^5.0.0",
+    "@types/morgan": "^1.10.0",
+    "@types/node": "^22.10.2",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@vitejs/plugin-react": "^4.3.4",
+    "concurrently": "^9.0.1",
+    "jsdom": "^25.0.1",
+    "supertest": "^7.0.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2",
+    "vite": "^6.0.5",
+    "vitest": "^2.1.8"
+  }
+}
